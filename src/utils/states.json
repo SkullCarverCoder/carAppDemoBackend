@@ -1,0 +1,287 @@
+[
+	{
+		"code": "AL",
+		"state": "Alabama",
+		"category": "state"
+	},
+	{
+		"code": "AK",
+		"state": "Alaska",
+		"category": "state"
+	},
+	{
+		"code": "AZ",
+		"state": "Arizona",
+		"category": "state"
+	},
+	{
+		"code": "AR",
+		"state": "Arkansas",
+		"category": "state"
+	},
+	{
+		"code": "CA",
+		"state": " California",
+		"category": " state"
+	},
+	{
+		"code": "CO",
+		"state": "Colorado",
+		"category": "state"
+	},
+	{
+		"code": "CT",
+		"state": "Connecticut",
+		"category": "state"
+	},
+	{
+		"code": "DE",
+		"state": "Delaware",
+		"category": "state"
+	},
+	{
+		"code": "FL",
+		"state": "Florida",
+		"category": "state"
+	},
+	{
+		"code": "GA",
+		"state": "Georgia",
+		"category": "state"
+	},
+	{
+		"code": "HI",
+		"state": "Hawaii",
+		"category": "state"
+	},
+	{
+		"code": "ID",
+		"state": "Idaho",
+		"category": "state"
+	},
+	{
+		"code": "IL",
+		"state": "Illinois",
+		"category": "state"
+	},
+	{
+		"code": "IN",
+		"state": "Indiana",
+		"category": "state"
+	},
+	{
+		"code": "IA",
+		"state": "Iowa",
+		"category": "state"
+	},
+	{
+		"code": "KS",
+		"state": "Kansas",
+		"category": "state"
+	},
+	{
+		"code": "KY",
+		"state": "Kentucky",
+		"category": "state"
+	},
+	{
+		"code": "LA",
+		"state": "Louisiana",
+		"category": "state"
+	},
+	{
+		"code": "ME",
+		"state": "Maine",
+		"category": "state"
+	},
+	{
+		"code": "MD",
+		"state": "Maryland",
+		"category": "state"
+	},
+	{
+		"code": "MA",
+		"state": "Massachusetts",
+		"category": "state"
+	},
+	{
+		"code": "MI",
+		"state": "Michigan",
+		"category": "state"
+	},
+	{
+		"code": "MN",
+		"state": "Minnesota",
+		"category": "state"
+	},
+	{
+		"code": "MS",
+		"state": "Mississippi",
+		"category": "state"
+	},
+	{
+		"code": "MO",
+		"state": "Missouri",
+		"category": "state"
+	},
+	{
+		"code": "MT",
+		"state": "Montana",
+		"category": "state"
+	},
+	{
+		"code": "NE",
+		"state": "Nebraska",
+		"category": "state"
+	},
+	{
+		"code": "NV",
+		"state": "Nevada",
+		"category": "state"
+	},
+	{
+		"code": "NH",
+		"state": "New Hampshire",
+		"category": "state"
+	},
+	{
+		"code": "NJ",
+		"state": "New Jersey",
+		"category": "state"
+	},
+	{
+		"code": "NM",
+		"state": "New Mexico",
+		"category": "state"
+	},
+	{
+		"code": "NY",
+		"state": "New York",
+		"category": "state"
+	},
+	{
+		"code": "NC",
+		"state": "North Carolina",
+		"category": "state"
+	},
+	{
+		"code": "ND",
+		"state": "North Dakota",
+		"category": "state"
+	},
+	{
+		"code": "OH",
+		"state": "Ohio",
+		"category": "state"
+	},
+	{
+		"code": "OK",
+		"state": "Oklahoma",
+		"category": "state"
+	},
+	{
+		"code": "OR",
+		"state": "Oregon",
+		"category": "state"
+	},
+	{
+		"code": "PA",
+		"state": "Pennsylvania",
+		"category": "state"
+	},
+	{
+		"code": "RI",
+		"state": "Rhode Island",
+		"category": "state"
+	},
+	{
+		"code": "SC",
+		"state": "South Carolina",
+		"category": "state"
+	},
+	{
+		"code": "SD",
+		"state": "South Dakota",
+		"category": "state"
+	},
+	{
+		"code": "TN",
+		"state": "Tennessee",
+		"category": "state"
+	},
+	{
+		"code": "TX",
+		"state": "Texas",
+		"category": "state"
+	},
+	{
+		"code": "UT",
+		"state": "Utah",
+		"category": "state"
+	},
+	{
+		"code": "VT",
+		"state": "Vermont",
+		"category": "state"
+	},
+	{
+		"code": "VA",
+		"state": "Virginia",
+		"category": "state"
+	},
+	{
+		"code": "WA",
+		"state": "Washington",
+		"category": "state"
+	},
+	{
+		"code": "WV",
+		"state": "West Virginia",
+		"category": "state"
+	},
+	{
+		"code": "WI",
+		"state": "Wisconsin",
+		"category": "state"
+	},
+	{
+		"code": "WY",
+		"state": "Wyoming",
+		"category": "state"
+	},
+	{
+		"code": "DC",
+		"state": "District of Columbia",
+		"category": "district"
+	},
+	{
+		"code": "AS",
+		"state": "American Samoa",
+		"category": "outlying territory"
+	},
+	{
+		"code": "GU",
+		"state": "Guam",
+		"category": "outlying territory"
+	},
+	{
+		"code": "MP",
+		"state": "Northern Mariana Islands",
+		"category": "outlying territory"
+	},
+	{
+		"code": "PR",
+		"state": "Puerto Rico",
+		"category": "outlying territory"
+	},
+	{
+		"code": "UM",
+		"state": "United States Minor Outlying Islands",
+		"category": "outlying territory"
+	},
+	{
+		"code": "VI",
+		"state": "Virgin Islands US",
+		"category": "outlying territory"
+	}
+]
