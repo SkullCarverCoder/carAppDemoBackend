@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "c9b2c4d0-a8a5-4a98-8760-d6668125f317",
+		"name": "carAppDemoBackend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Car Successfully",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"APGW86\",\r\n    \"vin\": \"1GBJC34R9XF017297\",\r\n    \"description\": \"The car of my dreams\",\r\n    \"value\": \"99,000\",\r\n    \"currentMileage\": \"9000\",\r\n    \"color\": \"#ffd359\",\r\n    \"registration\": {\r\n        \"number\": \"99999\",\r\n        \"state\": \"WV\",\r\n        \"fullname\": \"Juan Hernandez\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8889/api/cars/v/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/api/cars/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Car Wrongly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/api/cars/v/099911",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"099911"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Car Successfully",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8889/api/cars/v/3FAFP13P41R199033",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"3FAFP13P41R199033"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Specific Car Successfully",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"B3TH1S9\",\r\n    \"vin\": \"3FAFP13P41R199033\",\r\n    \"description\": \"The car of my dreams\",\r\n    \"value\": \"200,000\",\r\n    \"currentMileage\": 8000,\r\n    \"color\": \"#ffd359\",\r\n    \"registration\": {\r\n        \"number\": \"99999\",\r\n        \"state\": \"AL\",\r\n        \"fullname\": \"Juan Hernandez\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8889/api/cars/v/1D7HA18N38J191236",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"1D7HA18N38J191236"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modify Specific Car Wrongly",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"3ATH1S\",\r\n    \"vin\": \"1GNKVGED5\",\r\n    \"description\": \"The car of my dreams\",\r\n    \"value\": \"99,00$\",\r\n    \"currentMileage\": \"9000\",\r\n    \"color\": \"#ffd359\",\r\n    \"registration\": {\r\n        \"number\": \"99999\",\r\n        \"state\": \"CM\",\r\n        \"fullname\": \"Juan Hernandez\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8889/api/cars/v/3FAFP13P41R199033",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"3FAFP13P41R199033"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Specific Car Wrongfully",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"B3TH1S9\",\r\n    \"vin\": \"1D7HA18N38J191236\",\r\n    \"description\": \"The car of my dreams\",\r\n    \"value\": \"200,000\",\r\n    \"currentMileage\": 8000,\r\n    \"color\": \"#ffd359\",\r\n    \"registration\": {\r\n        \"number\": \"99999\",\r\n        \"state\": \"WV\",\r\n        \"fullname\": \"Juan Fernandez\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8889/api/cars/v/delete/91811922",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"delete",
+						"91811922"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Specific Car Succesfully",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"licensePlate\": \"B3TH1S9\",\r\n    \"vin\": \"1D7HA18N38J191236\",\r\n    \"description\": \"The car of my dreams\",\r\n    \"value\": \"200,000\",\r\n    \"currentMileage\": 8000,\r\n    \"color\": \"#ffd359\",\r\n    \"registration\": {\r\n        \"number\": \"99999\",\r\n        \"state\": \"WV\",\r\n        \"fullname\": \"Juan Fernandez\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8889/api/cars/v/delete/3FAFP13P41R199033",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"api",
+						"cars",
+						"v",
+						"delete",
+						"3FAFP13P41R199033"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "specificCarVin",
+			"value": "1GBJC34R9XF017297",
+			"type": "default"
+		},
+		{
+			"key": "modifiedCarVin",
+			"value": "3FAFP13P41R199033",
+			"type": "default"
+		}
+	]
+}

@@ -2,7 +2,7 @@
 <h1 align="center"> 👨‍💻🚘CarAppDemoBackend </h1>
 </p>
 <p align="center">
-  • <a href="https://github.com/SkullCarverCoder/CarAppDemo">Check frontend</a> • <a href="mailto:juanlh182@gmail.com">Contact</a>
+  • <a href="mailto:juanlh182@gmail.com">Contact</a>
 <br><br>
 </p>
 A car rental app demo backend on Node.js
@@ -15,7 +15,12 @@ git clone https://github.com/SkullCarverCoder/carAppDemoBackend.git && cd ./carA
 # install dependencies
 # replace 'npm' with 'yarn' if preferred
 npm install
+# start db docker dettached
+docker compose up -d
 # start web server
 # replace with `yarn dev` to run if yarn
 npm run dev
 ```
+## Test
+
+You can test this backend with a collection of requests made on [Postman](https://www.postman.com/) make sure to import [this file](carAppDemoBackend.postman_collection.json)
