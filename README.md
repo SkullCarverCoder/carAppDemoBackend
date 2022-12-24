@@ -21,6 +21,11 @@ docker compose up -d
 # replace with `yarn dev` to run if yarn
 npm run dev
 ```
+## Assumptions made
+- VIN data comes from an external [API](https://vpic.nhtsa.dot.gov/api/)
+- Data regarding the specifics of the vehicle is considered metadata and stored on [VehicleMetadata](src/api/models/vehicleMetadata/vehicleMetadata.ts) model
+- VIN is used for lookup of vehicle given is uniqueness
+- Validation of payload when is a form (create, update) is necessary
 ## Test
 
 You can test this backend with a collection of requests made on [Postman](https://www.postman.com/) make sure to import [this file](carAppDemoBackend.postman_collection.json)
