@@ -1,7 +1,6 @@
 import {
   IsAlphanumeric,
   IsDateString,
-  Max,
   Min,
   IsHexColor,
   IsCurrency,
@@ -9,21 +8,20 @@ import {
   IsDefined,
   IsNotEmpty,
   IsNotEmptyObject,
+  Length,
 } from "class-validator";
 import { RegistrationForm } from "./registration";
 
 export class UpdateCarForm {
   @IsAlphanumeric()
-  @Max(12)
+  @Length(5, 12)
   licensePlate: string;
 
   @IsAlphanumeric()
-  @Min(11)
-  @Max(17)
+  @Length(11, 17)
   vin: string;
 
-  @IsAlphanumeric()
-  @Max(320)
+  @Length(0, 320)
   description: string;
 
   // e.g 20,000$
@@ -79,7 +77,7 @@ export class CreateCarForm {
 
   @IsDefined()
   @IsNotEmpty()
-  value: string;
+  value: number;
 
   @IsDefined()
   @IsNotEmpty()
@@ -112,7 +110,7 @@ export class CreateCarForm {
     this.licensePlate = licensePlate;
     this.vin = vin;
     this.description = description;
-    this.value = value;
+    this.value = Number(value.replace(",", ""));
     this.color = color;
     this.currentMileage = currentMileage;
     this.registration = registration;
@@ -121,15 +119,11 @@ export class CreateCarForm {
 
 export class GetCarsQuery {
   @IsAlphanumeric()
-  id: string;
-
-  @IsAlphanumeric()
-  @Max(12)
+  @Length(5, 12)
   licensePlate: string;
 
   @IsAlphanumeric()
-  @Min(11)
-  @Max(17)
+  @Length(11, 17)
   vin: string;
 
   @IsHexColor()

@@ -5,7 +5,7 @@ import {
   IsAlpha,
   IsIn,
 } from "class-validator";
-import { US_STATES_ISO_2 } from "src/utils/states";
+import { US_STATES_ISO_2 } from "../../utils/states";
 
 export class RegistrationForm {
   @IsInt()
